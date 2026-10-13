@@ -30,24 +30,6 @@ Instead of training directly on raw video frames, this project uses body pose la
   - pose-angle display
   - basic form feedback
 
----
-
-## Supported Exercise Classes
-
-The final model supports 8 exercise classes:
-
-| Exercise |
-|---|
-| Bench Press |
-| Handstand Pushups |
-| Jump Rope |
-| Jumping Jack |
-| Lunges |
-| Pull Ups |
-| Push Ups |
-| Squats |
-
----
 
 ## Dataset
 
