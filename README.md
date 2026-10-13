@@ -4,7 +4,7 @@
 
 The system extracts full-body pose landmarks, converts movement into temporal keypoint sequences, classifies the exercise, and provides live feedback such as prediction confidence, repetition count, movement stage, pose angles, and basic form guidance.
 
----
+
 
 ## Why I Built This
 
@@ -12,7 +12,7 @@ Most fitness tracking systems either depend on wearable sensors or only count si
 
 Instead of training directly on raw video frames, this project uses body pose landmarks. This makes the system lighter, more interpretable, and better suited for real-time inference.
 
----
+
 
 ## Key Highlights
 
@@ -76,7 +76,7 @@ Exercise prediction
 Confidence, reps, angles, and form feedback
 ```
 
----
+
 
 ## Model Results
 
@@ -143,33 +143,6 @@ The live demo uses a sliding window of pose sequences and smooths predictions to
 | Data Processing | NumPy, Pandas |
 | Evaluation | scikit-learn, Matplotlib |
 
----
-
-## Repository Structure
-
-```text
-PoseMotion-Coach/
-├── src/
-│   ├── index_videos.py
-│   ├── extract_keypoints.py
-│   ├── train.py
-│   ├── evaluate.py
-│   ├── live_demo.py
-│   ├── form_feedback.py
-│   ├── models.py
-│   ├── pose_utils.py
-│   └── dataset.py
-├── assets/
-│   └── results/
-│       ├── lstm_8class_confusion_matrix.png
-│       └── transformer_8class_confusion_matrix.png
-├── config.yaml
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
----
 
 ## How to Run
 
@@ -284,26 +257,6 @@ If the webcam does not open, try changing the camera index:
 --camera 1
 ```
 
----
-
-## Notes
-
-The dataset, processed keypoint files, virtual environment, and trained model weights are not included in this repository because of file size.
-
-Ignored local files include:
-
-```text
-.venv/
-data/raw/
-data/processed/
-runs/
-*.keras
-*.npy
-```
-
-The repository contains the full training, evaluation, and inference pipeline along with result images.
-
----
 
 ## Future Improvements
 
@@ -315,8 +268,4 @@ The repository contains the full training, evaluation, and inference pipeline al
 - Add more detailed exercise-specific form correction logic.
 - Add real-time demo video or GIF to the README.
 
----
 
-## Resume Summary
-
-Built a real-time AI fitness coach using MediaPipe Pose to extract full-body landmarks from 996 UCF101 exercise videos and convert movements into 48-frame temporal keypoint sequences. Trained and compared LSTM and Transformer models across 8 exercise classes, achieving 93% test accuracy and 0.94 macro-F1 with LSTM. Developed a live webcam demo with confidence thresholding, prediction smoothing, repetition counting, pose-angle display, and form feedback.
