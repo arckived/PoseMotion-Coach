@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+data/raw/
+data/processed/
+data/manifest.csv
+
+runs/
+*.keras
+*.h5
+*.npy
+
+.DS_Store

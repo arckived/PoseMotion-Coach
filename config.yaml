@@ -1,0 +1,15 @@
+sequence_length: 48
+landmark_dim: 99
+batch_size: 16
+epochs: 30
+validation_size: 0.15
+test_size: 0.15
+random_seed: 42
+classes:
+  - squat
+  - pushup
+  - plank
+  - lunge
+  - jumping_jack
+  - situp
+  - standing
