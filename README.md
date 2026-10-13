@@ -93,11 +93,11 @@ The LSTM model performed better on this dataset. The Transformer model showed hi
 
 ### LSTM Confusion Matrix
 
-![LSTM Confusion Matrix](assets/results/lstm_8class_confusion_matrix.png)
+<img src="assets/results/lstm_8class_confusion_matrix.png" width="500">
 
 ### Transformer Confusion Matrix
 
-![Transformer Confusion Matrix](assets/results/transformer_8class_confusion_matrix.png)
+<img src="assets/results/transformer_8class_confusion_matrix.png" width="500">
 
 ---
 
